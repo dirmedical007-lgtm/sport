@@ -171,6 +171,9 @@ h2{font:800 clamp(2.6rem,8vw,5.5rem)/.92 var(--cond);text-transform:uppercase;le
 .contact .pill:hover{background:var(--paper);color:var(--ink);border-color:var(--paper)}
 .note{margin-top:2rem;font-size:.9rem}
 
+/* Keep the mobile call action only in the bottom dock */
+@media (max-width:899px){.bar .wrap > a.pill{display:none}}
+
 /* sticky mobile call bar */
 .dock{position:fixed;inset:auto 0 0;z-index:30;display:flex;gap:.6rem;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(4,18,14,.94);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
 .dock .pill{flex:1}
